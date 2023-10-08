@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hela2"
+    tools:context=".Login"
+
+
+
+    >
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="231dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Login"
+        android:textColor="@color/my_otrolocor"
+        android:textColorHighlight="@color/my_secundary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Usuario"
+        android:textColor="@color/my_otrolocor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/textUsuario"
+        android:layout_width="227dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Ingresar el usuario"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Contraseña"
+        android:textColor="@color/my_otrolocor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Ingrese la contraseña "
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsuario" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+
+        android:backgroundTint="#73D1DD"
+        android:onClick="Validarbnt"
+        android:text="Inicar sesion"
+        android:textColor="@color/my_secundary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:strokeColor="#3F2A65" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="141dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#73D1DD"
+        android:onClick="Registrar"
+        android:text="Registrar"
+        android:textColor="@color/my_secundary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textPass" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="151dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#73D1DD"
+        android:onClick="Consultar"
+        android:text="Consultar"
+        android:textColor="@color/my_secundary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnIniciar" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="123dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#73D1DD"
+        android:onClick="Actualizar"
+        android:text="Actualizar"
+        android:textColor="@color/my_secundary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnRegistrar" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="220dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="76dp"
+        android:backgroundTint="#73D1DD"
+        android:onClick="Eliminar"
+        android:text="Eliminar"
+        android:textColor="@color/my_secundary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnActualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
